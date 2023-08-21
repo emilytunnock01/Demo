@@ -5,39 +5,181 @@
 		<title> CSS Practice </title>
 		
 		<style>	
+			
+			body {
+				background-color : gray; 
+			}
+
+			#heading-one {
+			background-color : yellow;
+			font-family: "Helvetica", sans-serif;
+			font-style: italic; 
+			text-align : center; 
+			 }
+
 			p {
             		color: rgb(191, 0, 255);
-        		}
+			}
 
 			ul {
-			color: rgb(0, 232, 15);
+			color: rgb(0, 232, 15);}
+			
+			.parag-class {
+				background-color : orange;
+				font-family: sans-serif;
+			 }
+			.html { color: seagreen;
+
 			}
+            #back-list {
+                background-color: rgb(230, 230, 230);
+				
+            }
+			#bunny { 
+				width: 320px;
+				position: relative;
+				top: 20px;
+				left: 10px;
+			}
+
+			#duck {
+				width: 220px;
+				position: relative;
+			}
+
+			#links {
+				float: left;
+				width: 30%;
+				margin-right: 10px;
+			}
+
+			#container {
+				width: 800px;
+				margin: auto;
+				border: 1px solid rgb(255, 0, 0);
+				border-top: 10px solid purple; 
+				padding: 15px; 
+			}
+            #table {
+                width: 100px;
+                border: 1px solid black;
+            }
 		</style>
 
 	</head>
 	
 	<body>
-	
-		<h1> Practicing HTML </h1>
-		
-		<img src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn" width="203"> 
-		
-		<p> Paragraph writing to test out how to use classes in HTML files. This will be added to my Demo repo on github. </p>
+		<div id="container">
+			<h1 id="heading-one"> Practicing <span class="html"> HTML</span> </h1>
 
+			<img id="bunny" src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn">
+			<img id="duck" src="https://i.kym-cdn.com/photos/images/original/002/429/796/96c.gif" alt="dancing duck with hat" />
+			<p> Paragraph writing to test out how to use classes in HTML files. This will be added to my Demo repo on github. </p>
 
-	<h2> These are examples of lists </h2>
-	<ul>
-	<li> making a list with bullet points </li>
-	<li> this list should be in a different color </li>
-	</ul>
+			<div id="back-list">
+				<h2> These are examples of lists </h2>
+				<h3> Bullet points: </h3>
+				<ul>
+					<li> making a list with bullet points </li>
+					<li> this list should be in a different color </li>
+				</ul>
 
-	<ol>
-	<li> and this is a numbered list </li>
-	<li> second entry </li>
-	</ol>
+				<h3 id="number-list"> numbered points: </h3>
+				<ol>
+					<li> and this is a numbered list </li>
+					<li> second entry </li>
+				</ol>
+			</div>
 
+			<p class="parag-class"> I am making a class in the html and then editing it in the style to seperate it from other paragraphs. </p>
 
+			<a target="_blank" href="https://www.urbandictionary.com/define.php?term=Read%20More"> Link to read more </a>
+
+			<div id="table">
+				<table>
+					<thead>
+						<tr>
+							<th> 0 </th>
+							<th> 1 </th>
+							<th> 2 </th>
+							<th> 3 </th>
+							<th> 4 </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th> 1 </th>
+							<td> 1 </td>
+							<td> 2 </td>
+							<td> 3 </td>
+							<td> 4 </td>
+						</tr>
+						<tr>
+							<th> 2 </th>
+							<td> 2 </td>
+							<td> 4 </td>
+							<td> 6 </td>
+							<td> 8 </td>
+						</tr>
+						<tr>
+							<th> 3 </th>
+							<td> 3 </td>
+							<td> 6 </td>
+							<td> 9 </td>
+							<td> 12 </td>
+						</tr>
+						<tr>
+							<th> 4 </th>
+							<td> 4 </td>
+							<td> 8 </td>
+							<td> 12 </td>
+							<td> 16 </td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<img src="https://www.kasandbox.org/programming-images/misc/boxmodel.png" width="320">
+            
+			<div id="links">
+                <h3>List of stuff</h3>
+                <ul>
+                    <li>scissors</li>
+                    <li>pencils</li>
+                    <li>pens</li>
+                </ul>
+            </div>
+
+		</div>
+
+        
 
 	</body>
 
 </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
